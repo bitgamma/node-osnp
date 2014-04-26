@@ -1,0 +1,39 @@
+{
+  "name": "node-osnp",
+  "version": "0.0.1",
+  "homepage": "https://github.com/briksoftware/node-osnp",
+  "description": "Open Sensor Network Protocol for Node.js",
+  "license": "MIT",
+  "author": "Ksenia Lebedeva",
+  "contributors": [
+    "Michele Balistreri"
+  ],
+  "main": "./lib/osnp.js",
+  "scripts": {
+    "test": "mocha -R spec ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briksoftware/node-osnp"
+  },
+  "keywords": [
+    "sensor network",
+    "iot",
+    "internet of things",
+    "home automation",
+    "home control",
+    "industrial automation"
+  ],
+  "bugs": {
+    "url": "https://github.com/briksoftware/node-osnp/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "1.18.x",
+    "chai": "1.9.x"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
