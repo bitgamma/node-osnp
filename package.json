@@ -1,6 +1,6 @@
 {
   "name": "node-osnp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/briksoftware/node-osnp",
   "description": "Open Sensor Network Protocol for Node.js",
   "license": "MIT",
