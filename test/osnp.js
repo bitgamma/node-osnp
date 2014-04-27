@@ -96,4 +96,18 @@ describe('OSNP', function() {
       respFrame.encode().should.deep.equal(new Buffer([0x61, 0x8c, 0x01, 0xfe, 0xca, 0xef, 0xbe, 0xef, 0xbe, 0xef, 0xbe, 0xef, 0xbe, 0xbe, 0xba]));
     }); 
   }); 
+  
+  describe('#makeFrameControlLow', function() {
+    it('should format a control low byte with the given parameters', function() {
+      var frameControlLow = osnp.makeFrameControlLow(osnp.FrameType.DATA, false, false, true, true);
+      frameControlLow.should.equal(0x61);
+    }); 
+  }); 
+  
+  describe('#makeFrameControlHigh', function() {
+    it('should format a control high byte with the given parameters', function() {
+      var frameControlHigh = osnp.makeFrameControlHigh(osnp.AddressingMode.SHORT_ADDRESS, osnp.FrameVersion.V2003, osnp.AddressingMode.SHORT_ADDRESS);
+      frameControlHigh.should.equal(0x88);
+    }); 
+  }); 
 });
